@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Error</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/error.css') }}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="success-message">
+    <svg viewBox="0 0 76 76" class="success-message__icon icon-checkmark">
+        <circle cx="38" cy="38" r="36"/>
+        <path fill="none" stroke="#FFFFFF" stroke-width="4" d="M 55.2 19.1 c -0.8 -0.8 -2.1 -0.8 -3 0 l -14.1 14.1 L 24 19.1 c -0.8 -0.8 -2.1 -0.8 -3 0 s -0.8 2.1 0 3 l 14.1 14.1 l -14.1 14.1 c -0.8 0.8 -0.8 2.1 0 3 c 0.4 0.4 0.9 0.6 1.5 0.6 c 0.5 0 1.1 -0.2 1.5 -0.6 l 14.1 -14.1 l 14.1 14.1 c 0.4 0.4 0.9 0.6 1.5 0.6 c 0.5 0 1.1 -0.2 1.5 -0.6 c 0.8 -0.8 0.8 -2.1 0 -3 l -14.1 -14.1 l 14.1 -14.1 C 56 21.3 56 20 55.2 19.1 z"/>
+    </svg>
+    <h1 class="success-message__title">Could Not Generate</h1>
+    <div class="success-message__content">
+        <p>Try Again With Another Search Query</p>
+    </div>
+</div>
+<!-- partial -->
+  <script  src="{{ url_for('static',filename='styles/err.js') }}"></script>
+
+</body>
+</html>
